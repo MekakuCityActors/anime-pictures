@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-10T06:05:51.272Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="W3SiY40qVIHtBIQQFuo_" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-10T06:27:43.943Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="QEDesHcLZTEYaa0EOPXr" version="14.4.4" type="github">
   <diagram id="FwcFqP0C5W_5_Z98Vjde" name="Page-1">
-    <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Cm3EA2zY6-B5ncBwFZGS-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="120" width="670" height="560" as="geometry" />
+          <mxGeometry x="-120" y="110" width="1090" height="660" as="geometry" />
         </mxCell>
         <mxCell id="Cm3EA2zY6-B5ncBwFZGS-19" value="rpc请求" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="410" y="80" width="56" height="20" as="geometry" />
@@ -43,8 +43,62 @@
             <mxPoint x="435" y="379" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-38" value="&lt;span class=&quot;token function&quot; style=&quot;box-sizing: border-box ; margin: 0px ; padding: 0px ; border: 0px ; font-stretch: inherit ; font-size: 14px ; line-height: inherit ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; color: rgb(57 , 58 , 52) ; background-color: rgb(255 , 255 , 255)&quot;&gt;append_queue()&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="330" width="40" height="20" as="geometry" />
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-38" value="&lt;span class=&quot;token function&quot; style=&quot;box-sizing: border-box ; margin: 0px ; padding: 0px ; border: 0px ; font-stretch: inherit ; font-size: 14px ; line-height: inherit ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; color: rgb(57 , 58 , 52) ; background-color: rgb(255 , 255 , 255)&quot;&gt;append_queue()将解析得到的item存到等待连接队列&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-43" value="&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;等待连接队列g_urlinfo_poll&lt;/span&gt;&lt;span class=&quot;token operator&quot; style=&quot;box-sizing: border-box ; margin: 0px ; padding: 0px ; border: 0px ; font-stretch: inherit ; font-size: 14px ; line-height: inherit ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; color: rgb(57 , 58 , 52) ; background-color: rgb(255 , 255 , 255)&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;wait_conn_queue&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="426" y="415" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-45" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="320" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-46" value="抓取重试线程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-47" value="页面处理线程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="306" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-48" value="结果发送线程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-49" value="异步抓取线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="320" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-50" value="&lt;span style=&quot;color: rgb(57 , 58 , 52) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;getpage_proc()&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-51" value="&lt;span style=&quot;color: rgb(57 , 58 , 52) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;connect_all_wait_queue()&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="370" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-52" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cm3EA2zY6-B5ncBwFZGS-45" target="Cm3EA2zY6-B5ncBwFZGS-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-53" value="遍历线程对应的那个等待连接队列，对所有待连接的请求进行连接" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="380" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-54" value="&lt;span style=&quot;color: rgb(57 , 58 , 52) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;start_connect()&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="410" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-58" value="&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;等待分析队列g_urlinfo_poll&lt;/span&gt;&lt;span class=&quot;token operator&quot; style=&quot;box-sizing: border-box ; margin: 0px ; padding: 0px ; border: 0px ; font-stretch: inherit ; font-size: 14px ; line-height: inherit ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; color: rgb(57 , 58 , 52) ; background-color: rgb(255 , 255 , 255)&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;wait_analysis_queue&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="510" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-60" value="" style="endArrow=classic;html=1;exitX=0.96;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Cm3EA2zY6-B5ncBwFZGS-45" target="Cm3EA2zY6-B5ncBwFZGS-58">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Cm3EA2zY6-B5ncBwFZGS-62" target="Cm3EA2zY6-B5ncBwFZGS-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-62" value="连接成功" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="470" width="50" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
