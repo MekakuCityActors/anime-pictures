@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-10T12:38:23.485Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="8oMLsCMUTAAeBt1G1VCJ" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-10T12:43:40.159Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="VVWQfw3J7gUl-eRU-XiR" version="14.4.4" type="github">
   <diagram id="FwcFqP0C5W_5_Z98Vjde" name="Page-1">
     <mxGraphModel dx="1682" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -112,7 +112,7 @@
             <mxPoint x="440" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-73" value="从等待分析队列中取出item进行页面分析，如果重定向失败放入等待分析队列" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-73" value="从等待分析队列中取出item进行页面分析" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-30" y="570" width="145" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Cm3EA2zY6-B5ncBwFZGS-74" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
@@ -236,7 +236,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Cm3EA2zY6-B5ncBwFZGS-120" value="重定向成功放回等待连接队列等待抓取&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="540" width="40" height="20" as="geometry" />
+          <mxGeometry x="369" y="530" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-121" value="如果重定向失败放入等待分析队列" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="600" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cm3EA2zY6-B5ncBwFZGS-122" value="解压失败并且之前是压缩抓取那么本次就使用非压缩抓取一次，否则放到等待分析队列" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="590" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
